@@ -1,0 +1,29 @@
+public class RectangleTest {
+    public void main(String[] args) {
+
+
+
+        //constructor
+        Rectangle rectangle1 = new Rectangle(5, 4);
+        Rectangle rectangle2 = new Rectangle(3, 8);
+        Rectangle rectangle3 = new Rectangle(6);
+
+
+       // 3 constructors in Rectangle class which calling...why it doesnt work???
+        rectangle1.setWidth(10);
+        Rectangle (rectangle1);
+        Rectangle(rectangle2);
+        Rectangle(rectangle3);
+
+//        System.out.println(rectangle1);
+//        String value = rectangle3.toString();//implament String
+//        System.out.println(value);
+    }
+    public static void testRectangle(Rectangle rectangle) {
+        System.out.println("isSquare" + rectangle.isSquare());
+        System.out.println("area:" + rectangle.area());
+        System.out.println("perimetr:" + rectangle.perimeter());
+        System.out.println(rectangle);
+
+
+    }}
