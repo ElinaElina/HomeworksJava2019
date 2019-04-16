@@ -1,0 +1,75 @@
+public class Rectangle {
+
+//    public Rectangle(int a) {
+//    }
+//
+//    public static void rectangle() {
+
+
+        private int length;    //private fields for rectangle properties are hidden/not show outside
+        private int width;
+
+
+            public Rectangle() //silent/default constructor ask constructor with significant/important parametrs
+
+        {
+            this(0 ); // Main constructor which gives parametrs to other constructors
+            // this doesnt match with this.lenght, different things, here I use this to call constructor not fields
+
+//            length = 0;            //if call then call first
+//            width = 0;
+        }
+           public Rectangle( int hight){  // third constructor with 1 parametr
+                this(hight, hight);
+//          this.length = hight;
+//          this.width = hight; //width
+         }
+
+            public Rectangle( int length, int width){    // second constructor
+            this.length = length;        //this (reads in private field) says that it is special only this length
+            this.width = width;
+        }
+
+
+         // geter un seter use only for fields(private),
+        // other methods(square, area, perimetrs we calculate, taht not fields)
+
+        public int getHeight () {        //geteris get from private filed things
+            return length;
+        }
+
+        public int getWidth () {
+            return width;
+        }
+
+        //seteris set width, setWidth match thiswidth and int width match with=width
+    // the way how user can apdate numbers, then use seter
+
+        public void setWidth ( int width){
+                if(width >=1){    //be sure that variable which user input is positive and not zero
+            this.width = width; //new variable
+        }}
+
+
+        public boolean isSquare() {
+                return length == width;
+
+            }
+
+
+        public int area() {
+            return length * width;
+        }
+
+
+        public int perimeter() {
+            return (length + width) * 2;
+        }
+
+
+////        @Override
+//        public String toString () {
+//            return "Rectangle [length=" + length + ", width=" + width + "]";
+//            //call length and width (fields) with toString because fields have private int which is inside properties
+
+        }
