@@ -11,9 +11,9 @@ public class RectangleTest {
 
        // 3 constructors in Rectangle class which calling...why it doesnt work???
         rectangle1.setWidth(10);
-        Rectangle (rectangle1);
-        Rectangle(rectangle2);
-        Rectangle(rectangle3);
+ //       Rectangle (rectangle1);
+   //     Rectangle(rectangle2);
+   //     Rectangle(rectangle3);
 
 //        System.out.println(rectangle1);
 //        String value = rectangle3.toString();//implament String
